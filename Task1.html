@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <style>
+            body{
+                background:linear-gradient(to bottom,black,black,black,black,black,black,black,black,black,black,black,black,black,crimson);
+            }
+            .fimage{
+                text-align:center;
+                font-size:6.5em;
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQPTN6nmhAgrlVpkoDeh4qILP1k4zedFTNsw&usqp=CAU");
+                background-repeat:round;
+                -webkit-background-clip:text;
+                color:transparent;
+            }
+            .container{
+                display:flex;
+                align-items:center;
+                margin:4.5rem;
+            }
+            .container .box{
+                width:17rem;
+                height:20rem;
+                position:relative;
+                border-radius:20px;
+                border:2px solid #786D5F;
+            }
+            .container .box:hover .imgBox{
+                border-radius:20px;
+                transform:translate(-2.8rem, -2.8rem);
+            }
+            .container .box:hover .content{
+                transform:translate(2rem,16.5rem);
+            }
+            .imgBox{
+                position:absolute;
+                top:0;
+                left:0;
+                transition:all 0.3s ease-in-out;
+            }
+            .imgBox img{
+                width:17rem;
+                height:20rem;
+                border-radius:20px;
+            }
+            h2{
+                color:#FFCBA4;
+                font-family:Courier;
+                font-size:20px;
+            }
+            h3{
+                color:bisque;
+                font-size:75px;
+                margin-left:7%;
+            }
+            h3:first-letter{
+                color:orangered;
+                font-size:70px;
+            }
+            h3:first-line{
+                color:orange;
+                font-size:30px;
+            }
+            .aboutcontainer{
+                width:30rem;
+                height:10rem;
+                margin:5.4rem;
+                padding:15px;
+            }
+            .aboutcontainer:hover{
+                width:60rem;
+                height:18rem;
+                padding:50px;
+                border-radius:40px;
+                border:1px solid orangered;
+                background:linear-gradient(45deg,orange,orangered,black 25%);
+            }
+            h1{
+                font-size:3em;
+                color:#B1FB17;
+            }
+            .aboutcontainer p{
+                width:45rem;
+                color:bisque;
+                text-align: justify;
+                font-size:1.3em;
+                letter-spacing:1.2px;
+            }
+            .container2{
+                display:flex;
+                flex-direction:row;
+                flex-wrap:wrap;
+            }
+            .skillscontainer,.experiencecontainer,.educationcontainer{
+                width:21rem;
+                height:22rem;
+                margin:4.4rem;
+                padding-left:1.5%;
+                border-radius:20px;
+                border:none;
+            }
+            .sboxcontainer{
+                display:flex;
+                flex-wrap:wrap;
+                gap:10px;
+            }
+            .sbox{
+                width:3rem;
+                height:3rem;
+                border:1px solid bisque;
+                border-radius:10% 50%;
+                display:inline-block;
+                align-items:center;
+                justify-content:center;
+                padding:10px;
+            }
+            .experiencecontainer p,.educationcontainer p{
+                font-size:1.035em;
+                padding-left:4.25%;
+                letter-spacing:0.8px;
+            }
+            .pcolor{
+                color:#ADF802;
+            }
+            .skillscontainer:hover,.experiencecontainer:hover,.educationcontainer:hover{
+                background:linear-gradient(to top,orange,crimson);
+            }
+            p{
+                color:bisque;
+            }
+            .workcontainer,.contactbox{
+                margin:4.4rem;
+            }
+            .workcontainer img{
+                width:14.5rem;
+                height:14rem;
+                border-radius:30px;
+                padding:15px;
+            }
+            .workcontainer p,.contactbox p{
+                font-size:1.5em;
+                font-family:Bodoni MT;
+            }
+            .footer{
+                height:2.5rem;
+                border:none;
+                border-radius: 10px;
+                background-color:crimson;
+                font-family:verdana;
+                word-spacing:1.5px;
+            }
+            .footer h4{
+                text-align:center;
+                font-size:1.2em;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 class="fimage">.PORTFOLIO.</h2>
+        <div class="container">
+            <div class="box">
+                <div class="imgBox">
+                <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrPf5JtWX65XwbOr-KHHcn-97HklVvmv8c3w&usqp=CAU" alt="image">
+                </div>
+                <div class="content">
+                    <h2>Padarthi Hamsini</h2>
+                </div>
+            </div>
+            <h3>Hello &#128075<br>Amigos...</h3>
+        </div>
+        <div class="aboutcontainer">
+            <h1>About me</h1>
+            <p>I'm Miss.<i style="color:orange">Hamsini Padarthi</i>.<br>Currently I'm pursuing 3/4 B.tech in S.R.K.R Engineering College in the stream of Computer Science and Engineering (CSE). I'm a WEB DEVELOPER with a passion for creating Attractive Websites.</p>
+        </div>
+        <br>
+        <div class="container2">
+            <div class="skillscontainer">
+                <h1>Skills</h1>
+         	    <div class="sboxcontainer">
+		            <div class="sbox"><p>HTML</p></div>
+		            <div class="sbox"><p>CSS</p></div>
+		            <div class="sbox"><p>JS</p></div>
+		            <div class="sbox"><p>PHP</p></div>
+		            <div class="sbox"><p>Java</p></div>
+		            <div class="sbox"><p>C++</p></div>
+		            <div class="sbox"><p>Python</p></div>
+                </div>
+	        </div>
+            <div class="experiencecontainer">
+		        <h1>Experience</h1>
+			    <p class="pcolor">Ongoing Internships</p>
+			    <p>Web development Intern at<br>1. Bharat<br>2. Oasisinfobyte</p>
+			    <p class="pcolor">Completed Internships</p>
+			    <p>1. Java Development Intern at Oasisinfobyte<br>2. Web development Intern at LetsGrowMore</p>
+	        </div>
+            <div class="educationcontainer">
+	            <h1>Education</h1>
+	            <p class="pcolor">UG:</p>
+	            <p>SRKREC(2021-present)</p>
+	            <p class="pcolor">Intermediate:</p>
+	            <p>Sri Pratibha Junior College(2019-2021)</p>
+	            <p class="pcolor">SSC:</p>
+	            <p>ARZP High School(2018-2019)</p>
+	        </div>
+        </div>
+        <div class="workcontainer">
+            <h1>Activities</h1>
+            <img src="https://st.depositphotos.com/1026266/4851/i/450/depositphotos_48513805-stock-photo-finger-pointing-on-tablet-pc.jpg" alt="SocialMedia">
+            <img src="https://www.shipbob.com/wp-content/uploads/2019/01/iStock-692898468-2-optimized.webp" alt="Shopping">
+            <img src="https://aitlanguageacademy.com/wp-content/uploads/2022/02/AIT-Webdesign-training-in-ambattur.png" alt="WebDevelopment">
+            <img src="https://www.internships.com/wp-content/uploads/2020/01/Internship-stats-wecompress.com_-scaled.jpg" alt="Internships">
+            <img src="https://plus.maths.org/latestnews/may-aug07/sudoku/Sudoku.jpg" alt="Sudoku">
+        </div>
+        <div class="contactbox">
+            <h1>Contact Me</h1>
+            <p>Via&#128071</p>
+            <p>&#x1F4E7 Email:: cvsh.p37@gmail.com</p>
+            <p>&#x1F4DE Mobile:: 9392442828</p>
+        </div>
+        <br><br><br><br><br>
+        <div class="footer">
+        <h4>:: This Page Was Created By Padarthi Hamsini &#129419 ::</h4>
+        </div>
+    </body>
+</html>
